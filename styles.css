@@ -1,0 +1,289 @@
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+  }
+
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
+      display: block;
+  }
+
+  body {
+      line-height: 1;
+  }
+
+  ol,
+  ul {
+      list-style: none;
+  }
+
+  blockquote,
+  q {
+      quotes: none;
+  }
+
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+      content: '';
+      content: none;
+  }
+
+  table {
+      border-collapse: collapse;
+      border-spacing: 0;
+  }
+
+  body {
+      font-family: 'Hanken Grotesk', sans-serif;
+      font-size: 18px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+  }
+
+  .score,
+  .status {
+      color: white;
+  }
+
+  .container {
+      box-sizing: border-box;
+      box-shadow: 8px 5px 5px rgb(129, 127, 127);
+      width: 550px;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      border-radius: 20px;
+  }
+
+  .display {
+      flex: 1;
+      background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 20px;
+
+
+  }
+
+  .text {
+    padding: 20px 0;
+      font-weight: 800;
+      color: hsl(241, 100%, 89%);
+      text-align: center;
+  }
+
+  .circle {
+      background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 50%;
+      width: 9.375rem;
+      height: 9.375rem;
+      margin-bottom: 1.25em;
+
+  }
+
+  .score {
+      font-size: 2.5em;
+      font-weight: 800;
+      padding-bottom: 10px;
+  }
+
+  .small {
+      font-size: 0.875rem;
+      color: hsl(241, 100%, 89%);
+  }
+
+  .great {
+      color: white;
+      font-weight: 700;
+      margin-bottom: 0.625em;
+  }
+
+  .sentence {
+      text-align: center;
+      color: hsl(241, 100%, 89%);
+      font-size: 16px;
+  }
+
+  .summary {
+      max-width: 50%;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 20px;
+      gap: 10px;
+
+  }
+
+  .conclusion {
+    padding: 40px 0 20px  0;
+      font-weight: 800;
+  }
+
+  .color {
+      color: hsl(241, 35%, 74%) !important;
+  }
+
+  .setup {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 5px;
+      font-weight: 800;
+      padding-right: 10px;
+      flex: 1;
+  }
+
+  .reaction {
+      background-color: rgba(255, 87, 87, 0.1);
+  }
+
+  .memory {
+      background-color: hsla(39, 100%, 56%, 0.1);
+  }
+
+  .verbal {
+      background-color: hsla(166, 100%, 37%, 0.1);
+  }
+
+  .visual {
+      background-color: hsla(234, 85%, 45%, 0.1);
+  }
+
+  .first {
+      color: hsl(0, 100%, 67%);
+      font-weight: 700;
+      display: inline;
+  }
+
+  .second {
+      color: hsl(39, 100%, 56%);
+  }
+
+  .third {
+      color: hsl(166, 100%, 37%);
+  }
+
+  .four {
+      color: hsl(234, 85%, 45%)
+  }
+
+  .button {
+    margin: 10px 0 20px 0;
+      justify-content: center;
+      border-radius: 30px;
+      color: white;
+      background-color: hsl(224, 30%, 27%);
+
+  }
+
+  @media(maxwidth:375px)
+  {}
