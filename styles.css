@@ -148,10 +148,8 @@
   }
 
   .container {
-      box-sizing: border-box;
       box-shadow: 8px 5px 5px rgb(129, 127, 127);
       width: 550px;
-      height: auto;
       display: flex;
       justify-content: center;
       border-radius: 20px;
@@ -170,7 +168,7 @@
   }
 
   .text {
-    padding: 20px 0;
+      padding: 20px 0;
       font-weight: 800;
       color: hsl(241, 100%, 89%);
       text-align: center;
@@ -213,7 +211,6 @@
   }
 
   .summary {
-      max-width: 50%;
       flex: 1;
       display: flex;
       flex-direction: column;
@@ -223,7 +220,7 @@
   }
 
   .conclusion {
-    padding: 40px 0 20px  0;
+      padding: 40px 0 20px 0;
       font-weight: 800;
   }
 
@@ -277,7 +274,7 @@
   }
 
   .button {
-    margin: 10px 0 20px 0;
+      margin: 10px 0 20px 0;
       justify-content: center;
       border-radius: 30px;
       color: white;
@@ -285,5 +282,11 @@
 
   }
 
-  @media(maxwidth:375px)
-  {}
+  @media (max-width:600px) {
+      .container {
+          flex-direction: column;
+          border-radius: 0;
+          height: 100vh;
+      }
+      .display{ border-radius: 0  0 20px 20px;}
+  }
